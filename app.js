@@ -43,19 +43,19 @@ const playGame = (userChoice) =>{
         drawGame();
      }else {
         let userWin=true;
-     if(userChoice==="rock" && compChoice==="paper"){
-        userWin=false;
-     }else if(userChoice==="rock" && compChoice==="scissors"){
-        userWin=true;
-     }else if(userChoice==="paper" && compChoice==="scissors"){
-        userWin=false;
-     }else if(userChoice==="paper" && compChoice==="rock"){
-        userWin=true;
-     }else if(userChoice==="scissors" && compChoice==="paper"){
-        userWin=true;
-     }else if(userChoice==="scissors" && compChoice==="rock"){
-        userWin=fale;
-     }
+             if(userChoice==="rock" && compChoice==="paper"){
+                userWin=false;
+             }else if(userChoice==="rock" && compChoice==="scissors"){
+                userWin=true;
+             }else if(userChoice==="paper" && compChoice==="scissors"){
+                userWin=false;
+             }else if(userChoice==="paper" && compChoice==="rock"){
+                userWin=true;
+             }else if(userChoice==="scissors" && compChoice==="paper"){
+                userWin=true;
+             }else if(userChoice==="scissors" && compChoice==="rock"){
+                userWin=fale;
+             }
      showWinner(userWin)
     }
 

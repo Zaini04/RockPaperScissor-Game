@@ -30,7 +30,7 @@ const drawGame = () =>{
 }
 
 const genCompChoice = () =>{
-    const choices = ["rock" , "paper" , "scissor"];
+    const choices = ["rock" , "paper" , "scissors"];
     const randIdx = Math.floor(Math.random()*3);
     return choices[randIdx];
 };
@@ -45,15 +45,15 @@ const playGame = (userChoice) =>{
         let userWin=true;
      if(userChoice==="rock" && compChoice==="paper"){
         userWin=false;
-     }else if(userChoice==="rock" && compChoice==="scissor"){
+     }else if(userChoice==="rock" && compChoice==="scissors"){
         userWin=true;
-     }else if(userChoice==="paper" && compChoice==="scissor"){
+     }else if(userChoice==="paper" && compChoice==="scissors"){
         userWin=false;
      }else if(userChoice==="paper" && compChoice==="rock"){
         userWin=true;
-     }else if(userChoice==="scissor" && compChoice==="paper"){
+     }else if(userChoice==="scissors" && compChoice==="paper"){
         userWin=true;
-     }else if(userChoice==="scissor" && compChoice==="rock"){
+     }else if(userChoice==="scissors" && compChoice==="rock"){
         userWin=fale;
      }
      showWinner(userWin)
